@@ -1,0 +1,118 @@
+// text size
+$text-xs: 13px;
+$text-base: 15px;
+$text-xl: 16px;
+$text-2xl: 23px;
+$text-3xl: 57px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+
+// text weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+
+// background color
+$bg-c1-primary:#b61984;
+
+// text color
+$text-c1-primary:#181818;
+$text-c2-primary:#191919;
+$text-c1-light:#fff;
+$text-c1-pink:#b61984;
+$text-c2-pink:#c5499e;
+
+// font-family
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary:'Roboto', sans-serif;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 15px;
+   font-family: "Montserrat", sans-serif;
+}
+a{
+   color: $text-c1-primary;
+   text-decoration: none;
+}
+
+
+.header{
+   .container{
+      display: flex;
+      justify-content: space-between;
+      .logo{
+         a{
+
+         }
+      }
+      nav{
+         padding-top: 25px;
+         a{
+            font-size: $text-xs;
+            font-weight: $text-semibold;
+            padding: 0 30px;
+         }
+      }
+      .information_menu_bar{
+         .information-menu_cell{
+            margin:20px;
+            .btncall_layout{
+               padding: 0 10px;
+               display: inline-block;
+               background-color: $bg-c1-primary;
+               border-radius:30px;
+               line-height: 2;
+               width: auto;
+               a{
+                  color: $text-c1-light;
+                  font-size: $text-xs;
+                  i{
+                  }
+                  span{
+                   
+                  }
+               }
+            }
+            a{
+
+            }
+         }
+      }
+   }
+}
+.about-us{
+   .container{
+      .row{
+         display: flex;
+         align-items: center;
+         .col_left{
+            width: 50%;
+            h3{
+               color: $text-c1-pink;
+               font-size: $text-xl;
+               font-weight: $text-bold;
+            }
+            h2{
+               font-size: $text-6xl;
+               font-weight: $text-bold;
+            }
+         }
+         .col_right{
+            width: 50%;
+            img{
+               width: 100%;
+            }
+         }
+      }
+   }
+}
